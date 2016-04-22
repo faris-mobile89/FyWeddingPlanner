@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">FyWeddingPlanner</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">SignUp</string>
+
+
+    <string name="goToSignUpString"><b><u>Sign Up Please</u></b></string>
+    <string name="ws_url_signUp">http://192.168.1.185/sample/webservices1.asmx/SignUp</string>
+    <string name="ws_url_login">http://192.168.1.185/sample/webservices1.asmx/Login</string>
+
+
+    <string name="title_activity_splach_screen">splachScreen</string>
+    <string name="title_activity_wedding_planner_list">weddingPlannerList</string>
+
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_wedding_planner">WeddingPlanner</string>
+    <string name="title_activity_car_rent">CarRent</string>
+    <string name="title_activity_saloons">Saloons</string>
+    <string name="title_activity_cards_shop">CardsShop</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_offers">OffersActivity</string>
+
+    <string name="title_offers">offer</string>
+    <string name="title_feedback">feed back</string>
+    <string name="title_iterst">iterst</string>
+    <string name="title_updatemyprofile">update my profile</string>
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_feed_back">FeedBack</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_all_card_shops">AllCardShopsActivity</string>
+    <string name="title_activity_all_wedding_planner">AllWeddingPlanner</string>
+    <string name="title_activity_frag1">Frag1</string>
+    <string name="title_activity_frag2">Frag2</string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
