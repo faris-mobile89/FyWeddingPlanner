@@ -90,7 +90,6 @@ public class OffersTab extends Fragment implements View.OnClickListener{
     }
 
     public void getOffers(){
-
         //Add request Queue
         RequestQueue queue = Volley.newRequestQueue(getActivity());
         String url = "http://192.168.1.185/sample/webservices1.asmx/readAllOffersFromDB";
@@ -115,14 +114,19 @@ public class OffersTab extends Fragment implements View.OnClickListener{
                 } else if( volleyError instanceof TimeoutError) {
                     errorDescription="Time Out";
                 }
-                else
-                    errorDescription="Error";
-                Toast.makeText(getActivity(), errorDescription, Toast.LENGTH_SHORT).show();
+                else {
+                    try {
+                        errorDescription = "Error";
+                        Toast.makeText(getActivity(), errorDescription, Toast.LENGTH_SHORT).show();
+                    }catch (Exception e){
+
+                    }
+                }
             }
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> param = new HashMap<String, String>();
+                Map<String, String> param = new HashMap<>();
                 //param.put("filter", et.getText().toString());
                 return param;
             }
@@ -133,7 +137,6 @@ public class OffersTab extends Fragment implements View.OnClickListener{
 
 
     public void loadListViewWithData(String string){
-
         try {
             JSONObject obj = new JSONObject(string);
             JSONArray obje = obj.getJSONArray("offers");
@@ -147,14 +150,11 @@ public class OffersTab extends Fragment implements View.OnClickListener{
                 m.setDisciption(sdescription);
                 offerList.add(m);
             }
-
             mAdapter = new CardAdapter(getActivity(), offerList,OffersTab.this);
             mRecyclerView.setAdapter(mAdapter);
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
     }
 
     String x = "{\n" +

@@ -33,7 +33,7 @@ public class MenuActivity extends Activity  implements
                 .setText("Wedding Planner")
                 .setTabListener(
                         new MyTabListener(this,
-                                Frag2.class.getName()));
+                                AllWeddingPlanner.class.getName()));
         ab.addTab( tab );
 
         tab = ab.newTab()
@@ -79,7 +79,6 @@ public class MenuActivity extends Activity  implements
             mActivity = activity;
             mFragName = fragName;
         }
-
 
 
         @Override
